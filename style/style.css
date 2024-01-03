@@ -11,6 +11,8 @@
     background-position: bottom center;
     background-size: cover;
     height: 100vh;
+    clip-path: polygon(0 4%, 100% 0, 100% 48%, 75% 100%, 25% 100%, 0 100%);
+
 
 }
 
@@ -23,25 +25,28 @@
     font-family: cursive;
 }
 
-.article{
+.article, #cow-type{
     width: 80%;
     /* margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
     margin-bottom: 60px; */
     margin: 60px auto;
-    border: 15px blueviolet groove;
+    /* border: 15px blueviolet groove; */
     /* border-width: 15px;
     border-color: blueviolet;
     border-style: groove; */
     padding: 60px;
-    background-color: olivedrab;
+    /* background-color: olivedrab; */
+    background: rgb(238,174,202);
+background: linear-gradient(270deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);  
+    
 }
 
-.article h2{
+.article h2, #cow-type h2{
     text-align: center;
     font-size: 48px;
-    border-color: yellow;
+    border-color: rgb(82, 82, 3);
     border-style: solid;
     border-width: 2px;
     border-top: 0px;
@@ -59,4 +64,20 @@
 .article p .imp{
     font-size: 4rem;
     background-color: yellow;
+}
+
+.cow-images{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ 
+}
+
+.cow-images div{
+    width: 300px;
+}
+.cow-images img{
+    width: ;
 }
